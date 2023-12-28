@@ -1,0 +1,59 @@
+.main {
+  background-color: var(--White);
+  width: 700px;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.header-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notificacions-number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--White);
+  background-color: var(--Blue);
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  position: absolute;
+  left: 220px;
+}
+
+.mark-as-read-btn {
+  border: none;
+  background-color: var(--White);
+  font-size: var(--size-paragraphs);
+  color: var(--Dark-grayish-blue);
+}
+
+.mark-as-read-btn:hover {
+  color: var(--Blue);
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  :host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .main {
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 {
+    font-size: 22px;
+  }
+  .notificacions-number {
+    left: 145px;
+  }
+}

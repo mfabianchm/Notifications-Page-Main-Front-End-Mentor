@@ -1,0 +1,12 @@
+<main class="main">
+  <div class="header-container">
+    <h1>Notifications</h1>
+    <span class="notificacions-number">{{ notifications }}</span>
+    <button class="mark-as-read-btn" (click)="markAllAsRead()">
+      Mark all as read
+    </button>
+  </div>
+  <app-notification [infoTexts]="texts"> </app-notification>
+</main>
+
+<router-outlet></router-outlet>

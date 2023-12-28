@@ -1,0 +1,22 @@
+<div
+  *ngFor="let info of infoTexts"
+  class="notification-container"
+  [ngStyle]="{
+    backgroundColor: info.pending
+      ? 'var(--Very-light-grayish-blue)'
+      : 'var(--White)'
+  }"
+>
+  <img src="{{ info.imgUrl }}" />
+  <div class="notification-header">
+    <p class="activity">
+      <span class="name">{{ info.name }} </span> {{ info.action }}
+      <span class="group-post-activity"> {{ info.group }}</span>
+      <span *ngIf="info.pending" class="red-bullet"></span>
+    </p>
+    <p class="time-ago">{{ info.time }}</p>
+    <div *ngIf="info.hasMessage" class="message-container">
+      {{ info.message }}
+    </div>
+  </div>
+</div>

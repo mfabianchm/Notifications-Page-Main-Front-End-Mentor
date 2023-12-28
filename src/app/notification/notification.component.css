@@ -1,0 +1,65 @@
+p {
+  font-size: var(--size-paragraph);
+  margin: 0;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  margin-right: 18px;
+}
+
+.notification-container {
+  display: flex;
+  padding: 20px;
+  background-color: var(--Very-light-grayish-blue);
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.notification-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.name {
+  color: var(--Very-dark-blue);
+  font-weight: 800;
+}
+
+.name:hover,
+.group-post-activity:hover {
+  cursor: pointer;
+  color: var(--Blue);
+}
+
+.group-post-activity {
+  color: var(--Blue);
+  font-weight: 800;
+}
+
+.time-ago {
+  color: var(--Dark-grayish-blue);
+}
+
+.red-bullet {
+  margin-left: 5px;
+  height: 10px;
+  width: 10px;
+  background-color: var(--Red);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.message-container {
+  border: 1px var(--Light-grayish-blue-2) solid;
+  border-radius: 5px;
+  margin-top: 10px;
+  padding: 10px;
+  color: var(--Dark-grayish-blue);
+}
+
+.message-container:hover {
+  cursor: pointer;
+  background-color: var(--Light-grayish-blue-2);
+}
